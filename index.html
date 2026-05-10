@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Blank Verse vs. Free Verse A Poetic Enquiry</title>
+<link rel="icon" href="https://i.pinimg.com/236x/b5/29/a3/b529a3777dfef525a3282bf4a56f7845.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="site-title">
+    <span class="ornament">✦</span>A Poetic Enquiry<span class="ornament">✦</span>
+  </div>
+  <p class="site-subtitle">Blank Verse / Free Verse</p>
+</header>
+
+<div class="main-wrap">
+<div class="container">
+
+  <!-- ═══════ LANDING ═══════ -->
+  <div id="landing">
+    <div class="verse-card" onclick="showPage('blank')">
+      <span class="card-icon">📜</span>
+      <div class="card-title">Blank Verse</div>
+      <p class="card-tagline">Iambic pentameter, unrhymed the metre of Shakespeare and Milton.</p>
+      <span class="card-cta">Explore →</span>
+    </div>
+    <div class="verse-card" onclick="showPage('free')">
+      <span class="card-icon">🌿</span>
+      <div class="card-title">Free Verse</div>
+      <p class="card-tagline">Unfettered by metre or rhyme the liberated voice of Whitman and Hughes.</p>
+      <span class="card-cta">Explore →</span>
+    </div>
+    <div class="verse-card" onclick="showPage('team')">
+      <span class="card-icon">⚜️</span>
+      <div class="card-title">Our Team</div>
+      <p class="card-tagline">The students who made this presentation shared their ideas about poetry and its different styles.</p>
+      <span class="card-cta">Meet the Team →</span>
+    </div>
+  </div>
+
+  <!-- ═══════ BLANK VERSE PAGE ═══════ -->
+  <div id="page-blank" class="detail-page">
+    <button class="back-btn" onclick="goHome()">← Return to Home Page</button>
+
+    <div class="page-banner">
+      <h1>📜 Blank Verse</h1>
+      <p>Iambic Pentameter, Unrhymed the Architecture of the English Poetic Canon</p>
+    </div>
+
+    <nav class="cat-nav" id="nav-blank">
+      <button class="cat-tab active" onclick="switchTab('blank','def',this)"><span class="tab-icon">📖</span> Definition</button>
+      <button class="cat-tab"        onclick="switchTab('blank','ex', this)"><span class="tab-icon">✍️</span> Example</button>
+      <button class="cat-tab"        onclick="switchTab('blank','au', this)"><span class="tab-icon">🖼️</span> Author</button>
+      <button class="cat-tab"        onclick="switchTab('blank','mcq',this)"><span class="tab-icon">⚖️</span> MCQ Game</button>
+    </nav>
+
+    <!-- Definition -->
+    <div class="cat-panel active" id="blank-def">
+      <div class="parchment-section" data-label="Definition">
+        <div class="section-heading">What Is Blank Verse?</div>
+        <blockquote class="definition-quote">
+          <p>Blank verse is poetry written in unrhymed iambic pentameter  each line containing ten syllables arranged in a pattern of unstressed and stressed beats (da-DUM, da-DUM, da-DUM, da-DUM, da-DUM), yet free from the constraint of end-rhyme.</p>
+        </blockquote>
+        <p class="definition-note">It is perhaps the most widely used verse form in English literature, employed by Shakespeare in his plays, Milton in <em>Paradise Lost</em>, and Wordsworth in <em>The Prelude</em>. Its disciplined structure lends itself to grand, sustained utterance  the metrical scaffold is felt beneath the words even when the rhymes are absent.</p>
+      </div>
+    </div>
+
+    <!-- Example -->
+    <div class="cat-panel" id="blank-ex">
+      <div class="parchment-section" data-label="Example Poem">
+        <div class="section-heading">A Manuscript Example</div>
+        <div class="ornamental-divider">· · ✦ · ·</div>
+        <div class="manuscript">
+          <div class="poem-title">From <em>Paradise Lost</em>, Book I  John Milton (1667)</div>
+          <div class="poem-stanza">
+            <span class="poem-line">Of Man's first disobedience, and the fruit</span>
+            <span class="poem-line">Of that forbidden tree whose mortal taste</span>
+            <span class="poem-line">Brought death into the World, and all our woe,</span>
+            <span class="poem-line">With loss of Eden, till one greater Man</span>
+            <span class="poem-line">Restore us, and regain the blissful Seat,</span>
+            <span class="poem-line">Sing, Heav'nly Muse …</span>
+          </div>
+          <div class="poem-stanza">
+            <span class="poem-line"><em>Note the rhythm: da-DUM da-DUM da-DUM da-DUM da-DUM</em></span>
+            <span class="poem-line"><em>"Of MAN's | first DIS | o-BE | di-ENCE | and THE"</em></span>
+          </div>
+          <div class="poem-author"> John Milton, <em>Paradise Lost</em></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author -->
+    <div class="cat-panel" id="blank-au">
+      <div class="parchment-section" data-label="Author Spotlight">
+        <div class="section-heading">The Master of the Form</div>
+        <div class="author-card">
+          <div class="author-img-wrap">
+            <img class="author-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNM30ChP8cfQGDEx-JwdIqx0b92nO0FYPzFg&s" alt="John Milton"/>
+            <div class="author-name">John Milton</div>
+          </div>
+          <div class="author-bio">
+            <h3>John Milton (1608 - 1674)</h3>
+            <p>John Milton was a famous English poet known for his great influence on English literature.
+He used Blank Verse in his poem Paradise Lost, writing without rhyme but with a smooth rhythmic style that made his poetry powerful and natural.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MCQ -->
+    <div class="cat-panel" id="blank-mcq">
+      <div class="quiz-section">
+        <div class="quiz-title">Simple Game </div>
+        <p class="quiz-intro">Answer the questions below to test thy knowledge of Blank Verse.</p>
+        <div class="name-input-wrap">
+          <label for="name-blank">Thy Name:</label>
+          <input class="name-input" id="name-blank" type="text" placeholder="Enter thy name (optional)…"/>
+        </div>
+        <div class="quiz-progress"><div class="quiz-progress-fill" id="prog-blank"></div></div>
+        <div id="questions-blank"></div>
+        <div class="score-display" id="score-blank">
+          <div class="score-big" id="score-num-blank"></div>
+          <div class="score-label">questions answered correctly</div>
+          <div class="score-verdict" id="score-verdict-blank"></div>
+          <button class="retake-btn" onclick="resetQuiz('blank')">✦ Retake the test</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /page-blank -->
+
+  <!-- ═══════ FREE VERSE PAGE ═══════ -->
+  <div id="page-free" class="detail-page">
+    <button class="back-btn" onclick="goHome()">← Return to Home Page</button>
+
+    <div class="page-banner">
+      <h1>🌿 Free Verse</h1>
+      <p>Liberated from Metre and Rhyme the Voice of the Modern Poetic Soul</p>
+    </div>
+
+    <nav class="cat-nav" id="nav-free">
+      <button class="cat-tab active" onclick="switchTab('free','def',this)"><span class="tab-icon">📖</span> Definition</button>
+      <button class="cat-tab"        onclick="switchTab('free','ex', this)"><span class="tab-icon">✍️</span> Example</button>
+      <button class="cat-tab"        onclick="switchTab('free','au', this)"><span class="tab-icon">🖼️</span> Author</button>
+      <button class="cat-tab"        onclick="switchTab('free','mcq',this)"><span class="tab-icon">⚖️</span> MCQ Game</button>
+    </nav>
+
+    <!-- Definition -->
+    <div class="cat-panel active" id="free-def">
+      <div class="parchment-section" data-label="Definition">
+        <div class="section-heading">What Is Free Verse?</div>
+        <blockquote class="definition-quote">
+          <p>Free verse (from the French <em>vers libre</em>) is poetry that is not bound by consistent metre, rhyme scheme, or any other formal constraint. It follows the natural rhythms of speech and thought, allowing line breaks, spacing, and repetition to create its own organic musicality.</p>
+        </blockquote>
+        <p class="definition-note">Walt Whitman pioneered free verse in English with <em>Leaves of Grass</em> (1855), declaring that poetry could be as vast and irregular as the American continent itself. It was later taken up by T.S. Eliot, Langston Hughes, Allen Ginsberg, and many others  becoming the dominant mode of modern and contemporary poetry.</p>
+      </div>
+    </div>
+
+    <!-- Example -->
+    <div class="cat-panel" id="free-ex">
+      <div class="parchment-section" data-label="Example Poem">
+        <div class="section-heading">A Manuscript Example</div>
+        <div class="ornamental-divider">· · ✦ · ·</div>
+        <div class="manuscript">
+          <div class="poem-title">From <em>Song of Myself</em>, §1  Walt Whitman (1855)</div>
+          <div class="poem-stanza">
+            <span class="poem-line">I celebrate myself, and sing myself,</span>
+            <span class="poem-line">And what I assume you shall assume,</span>
+            <span class="poem-line">For every atom belonging to me as good belongs to you.</span>
+          </div>
+          <div class="poem-stanza">
+            <span class="poem-line">I loafe and invite my soul,</span>
+            <span class="poem-line">I lean and loafe at my ease observing a spear of summer grass.</span>
+          </div>
+          <div class="poem-stanza">
+            <span class="poem-line"><em>Note: no fixed metre, no end-rhyme  yet rhythmic through</em></span>
+            <span class="poem-line"><em>repetition and the cadences of natural speech.</em></span>
+          </div>
+          <div class="poem-author"> Walt Whitman, <em>Leaves of Grass</em></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author -->
+    <div class="cat-panel" id="free-au">
+      <div class="parchment-section" data-label="Author Spotlight">
+        <div class="section-heading">The Father of Free Verse</div>
+        <div class="author-card">
+          <div class="author-img-wrap">
+            <img class="author-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Walt_Whitman_-_George_Collins_Cox.jpg" alt="Walt Whitman"/>
+            <div class="author-name">Walt Whitman</div>
+          </div>
+          <div class="author-bio">
+            <h3>Walt Whitman (1819–1892)</h3>
+            <p>Walt Whitman is considered the pioneer of Free Verse in English poetry.
+In Leaves of Grass, he broke traditional poetic rules by writing without fixed rhyme or meter, using the natural rhythm of speech to express freedom and individuality.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MCQ -->
+    <div class="cat-panel" id="free-mcq">
+      <div class="quiz-section">
+        <div class="quiz-title">⚖ The Scholar's Trial</div>
+        <p class="quiz-intro">Answer the questions below to test thy knowledge of Free Verse.</p>
+        <div class="name-input-wrap">
+          <label for="name-free">Thy Name:</label>
+          <input class="name-input" id="name-free" type="text" placeholder="Enter thy name (optional)…"/>
+        </div>
+        <div class="quiz-progress"><div class="quiz-progress-fill" id="prog-free"></div></div>
+        <div id="questions-free"></div>
+        <div class="score-display" id="score-free">
+          <div class="score-big" id="score-num-free"></div>
+          <div class="score-label">questions answered correctly</div>
+          <div class="score-verdict" id="score-verdict-free"></div>
+          <button class="retake-btn" onclick="resetQuiz('free')">✦ Retake the Trial</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /page-free -->
+
+  <!-- ═══════ TEAM PAGE ═══════ -->
+  <div id="page-team" class="detail-page">
+    <button class="back-btn" onclick="goHome()">← Return to Home Page</button>
+
+    <div class="page-banner">
+      <h1>⚜️ Our Team</h1>
+      <p>The supercalifragilisticexpialidocious</p>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar"><span class="team-initial">A</span></div>
+        <div class="team-info">
+          <div class="team-name">Abdelrahman Khaled</div>
+          <div class="team-ornament">· ✦ ·</div>
+          <p class="team-desc">"Without struggle, success has no value".</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar"><span class="team-initial">N</span></div>
+        <div class="team-info">
+          <div class="team-name">Nouredden Hisham</div>
+          <div class="team-ornament">· ✦ ·</div>
+          <p class="team-desc">"Despite everything, it's still you".</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar"><span class="team-initial">A</span></div>
+        <div class="team-info">
+          <div class="team-name">Ahmad Rageb</div>
+          <div class="team-ornament">· ✦ ·</div>
+          <p class="team-desc">"But nobody came".</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar"><span class="team-initial">H</span></div>
+        <div class="team-info">
+          <div class="team-name">Hisham Ayman</div>
+          <div class="team-ornament">· ✦ ·</div>
+          <p class="team-desc">"If everyone is moving forward together, then success takes care of itself".</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-footer-note">
+      <div class="ornamental-divider">· · ✦ · ·</div>
+      <p><em>"Poetry is the spontaneous overflow of powerful feelings"</em></p>
+    </div>
+  </div><!-- /page-team -->
+
+</div><!-- /container -->
+</div><!-- /main-wrap -->
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer class="site-footer">
+  <div class="footer-rule"></div>
+  <div class="footer-gems">
+    <div class="footer-line"></div>
+    <span>✦ · ✦ · ✦</span>
+    <div class="footer-line"></div>
+  </div>
+  <div class="footer-dev">Developed by <strong>Abdelrahman Khaled</strong></div>
+  <div class="footer-sub">Blank Verse &amp; Free Verse </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
